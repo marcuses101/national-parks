@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>National Parks</h1>
+
+    <section id="formInputs">
+        <form id="stateSelectorForm">
+            <label for="state">State:</label><br>
+            <select name="state" id="state"></select>
+            <ul id=statesToSearch> 
+            </ul>
+            <label for="maxResults">Results Length:</label><br>
+            <input type="number" name="maxResults" id="maxResults" value=10><br>
+            <input type="submit" value="Find Parks">
+        </form>
+    </section>
+
+    <section id="results">
+            <h2>Park Results:</h2>
+            <div id="parks"></div>
+        </article>
+    </section>
+
+
+    <script src="states.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
